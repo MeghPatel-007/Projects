@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36BA98;
+    z-index: -1;
+}
+
+.main{
+    height: 100vh;
+    width: 35rem;
+    border-right:.5rem #E9C46A solid;
+    border-left:.5rem #E9C46A solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E76F51;
+    flex-direction: column;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+    z-index: 0;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title {
+    height: 2.5rem;
+    width: 22.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px #F4A261 solid;
+    border-radius: 1rem;
+    margin: .5rem;
+    background-color: #E9C46A;
+    color: white;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.scoreBoard {
+    display: flex;
+}
+
+.scoreBox {
+    height: 3rem;
+    width: 11.3rem;
+    margin: .2rem .2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    border: 7px solid  #F4A261;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+    font-size: 1.5rem;
+    background-color:#E9C46A;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.gameBox {
+    background-color: #E9C46A;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15rem;
+    width: 18rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    border: none;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+}
+
+.btn {
+    height: 7rem;
+    width: 7rem;
+    background-color: #36BA98;
+    border-radius: 50%;
+    border: none;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+    /* background-size:cover ; */
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.btn:hover{
+    height: 9rem;
+    width: 9rem;
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.display{
+    height: 4rem;
+    color: white;
+    width: 22.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9C46A;
+    border: 5px solid #F4A261;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    margin: .5rem;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+    height: 4rem;
+    width: 22.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9C46A;
+    border: 5px solid #F4A261;
+    border-radius: .5rem;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+}
+
+
+.resetBtn {
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+    background-color: #36BA98;
+    color: white;
+    margin: .5rem;
+    /* font-weight: 1000; */
+    cursor: pointer;    
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+img{
+    height: 6.6rem;
+    width: 6.6rem;
+    margin-top: .2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.pop-up {
+    height: 20rem;
+    width: 30rem;
+    border:.5rem #E9C46A solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E76F51;
+    flex-direction: column;
+    z-index: 1;
+    position: fixed;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+    border-radius: .5rem;
+    /* visibility: hidden; */
+}
+
+.cancel {
+    height: 3rem;
+    width: 3rem;
+    translate: 14.5rem -3.5rem;
+    border: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: #E76F51;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: #E9C46A .5rem solid;
+    box-shadow: inset 0rem 0rem .2rem .1rem black;
+}
+
+.pop-up-title {
+    margin: .5rem;
+
+}
+
+.pop-up-comment {
+    font-weight: 100;
+    /* margin: .5rem .5rem 2rem .5rem; */
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.visible {
+    visibility: hidden;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.optchoiced {
+    height: 2.7rem;
+    margin: .2rem;
+    background-color: #36BA98;
+    width: 5rem;
+    box-shadow: inset  0rem 0rem .2rem .1rem black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin: .5rem;
+    background-color: #36BA98;
+    width: auto;
+    box-shadow: inset  0rem 0rem .2rem .1rem black;
+    border-radius: 1rem;
+    padding: .2rem 1rem;
+}
+
+
+.p {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
