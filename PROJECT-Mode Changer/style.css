@@ -1,97 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 div {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(255, 255, 255);
-    flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
 }
 
-label{
-    height: 5rem;
-    width: 10rem;
-    background-color: rgb(83, 240, 83);
-    border-radius: 2.7rem;
-    border: .1rem solid  rgb(119, 119, 119);
-    /* position: relative; */
-    cursor: pointer;
-    transition: .5s;
-    box-shadow: inset .5rem .5rem .5rem  rgba(33, 139, 0, 0.63);
+label {
+  height: 5rem;
+  width: 10rem;
+  background-color: rgb(83, 240, 83);
+  border-radius: 2.7rem;
+  border: 0.1rem solid rgb(119, 119, 119);
+  /* position: relative; */
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(33, 139, 0, 0.63);
 }
 
 label::before {
-    position: absolute;
-    height: 4.5rem;
-    width: 4.5rem;
-    border-radius: 50% ;
-    background-color: #ffffff;
-    content: "";
-    margin: .3rem;
-    transition: .5s;
-    box-shadow: .2rem .2rem .2rem rgb(29, 173, 0);
-    transform: translateX(5rem);
-    
+  position: absolute;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  content: "";
+  margin: 0.3rem;
+  transition: 0.5s;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(29, 173, 0);
+  transform: translateX(5rem);
 }
 
 label::after {
-    position: absolute;
-    content: "ON";
-    height: 3rem;
-    width: 5rem;
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 2rem;
-    transform: translateX(0rem);
-    transition: .5s;
-    text-shadow: .2rem .2rem .2rem rgb(0, 0, 0);
+  position: absolute;
+  content: "ON";
+  height: 3rem;
+  width: 5rem;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+  transform: translateX(0rem);
+  transition: 0.5s;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
 }
 
-input:checked+label{
-    background-color: gray;
-    border: .2rem solid white;
-    box-shadow:inset  -.5rem .5rem .5rem rgb(46, 46, 46);
-    
+input:checked + label {
+  background-color: gray;
+  border: 0.2rem solid white;
+  box-shadow: inset -0.5rem 0.5rem 0.5rem rgb(46, 46, 46);
 }
 
-input:checked+label::before{
-    background-color: rgb(255, 255, 255);
-    transform: translateX(0rem);
-    box-shadow: .2rem .2rem .2rem rgb(46, 46, 46);
-
+input:checked + label::before {
+  background-color: rgb(255, 255, 255);
+  transform: translateX(0rem);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(46, 46, 46);
 }
 
-input:checked+label::after{
-    transform: translateX(5rem);
-    content: "OFF";
-    transition: .5s;
-    text-shadow:inset .2rem .2rem .2rem rgb(0, 0, 0);
+input:checked + label::after {
+  transform: translateX(5rem);
+  content: "OFF";
+  transition: 0.5s;
+  text-shadow: inset 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
 }
 
-
-input{
-    display: none;
+input {
+  display: none;
 }
 
 .white {
-    background-color: white;
-    color: white;
-
+  background-color: white;
+  color: white;
 }
 
-.black{
-    background-color: black;
-    color: rgb(255, 255, 255);
+.black {
+  background-color: black;
+  color: rgb(255, 255, 255);
 }
 
 .space {
-    margin:  2rem 0;
+  margin: 2rem 0;
 }
