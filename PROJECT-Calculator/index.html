@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+      <img src="./Iphone mockup.jfif" alt="" id="img"/>
+      <div class="Container">
+        <img src="./Iphone Top.png" alt="">
+        <input type="text" id="Display" readonly>
+        <button class="button grey" onclick="clearDisplay(); enabler();">AC</button>
+        <button class="button grey" onclick=" Neg()">+/-</button>
+        <button class="button grey" onclick="displayVal('%')">%</button>
+        <button class="button yellow" onclick="displayVal('/')">&divide;</button>
+        <button class="button number" onclick="displayVal('7')">7</button>
+        <button class="button number" onclick="displayVal('8')">8</button>
+        <button class="button number" onclick="displayVal('9')">9</button>
+        <button class="button yellow" onclick="displayVal('*')">&times;</button>
+        <button class="button number" onclick="displayVal('6')">6</button>
+        <button class="button number" onclick="displayVal('5')">5</button>
+        <button class="button number" onclick="displayVal('4')">4</button>
+        <button class="button yellow" onclick="displayVal('-')">-</button>
+        <button class="button number" onclick="displayVal('3')">3</button>
+        <button class="button number" onclick="displayVal('2')">2</button>
+        <button class="button number" onclick="displayVal('1')">1</button>
+        <button class="button yellow" onclick="displayVal('+')">+</button>
+        <button class="button width" onclick="displayVal('0')">0</button>
+        <button class="button" onclick="displayVal('.')">.</button>
+        <button class="button yellow" onclick="calculate();">=</button>
+        <img src="./Iphone Bottom.png" alt="">
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

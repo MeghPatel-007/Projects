@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+#img {
+  height: 580px;
+  width: 639px;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 227px;
+  height: 490px;
+  flex-wrap: wrap;
+  background-color: #000000;
+  border-radius: 2rem;
+  padding: 0 10px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+#Display {
+  height: 130px;
+  width: 227px;
+  display: flex;
+  background-color: #000000;
+  font-size: 40px;
+  border: none;
+  padding: 10px;
+  text-align: end;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.button {
+  height: 50px;
+  width: 50px;
+  background-color: #505050;
+  border-radius: 50%;
+  margin: 3px;
+  font-size: 25px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #8d8d8d;
+  border: #ffffff 2px solid;
+  padding: 0.4px;
+}
+
+.width,
+.width:hover {
+  width: 100px;
+  border-radius: 50px;
+  text-align: start;
+  padding: 0 0 0 15px;
+}
+
+.grey {
+  background-color: #d4d4d2;
+  color: black;
+}
+
+.grey:hover {
+  border: #8d8d8d 2px solid;
+  background-color: #ececec;
+}
+
+.yellow {
+  background-color: #ff9500;
+}
+
+.yellow:hover {
+  background-color: #ffba58;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
